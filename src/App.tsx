@@ -19,7 +19,7 @@ export const App = () => {
 
       <About />
       
-      <History/>
+      {/* <History/> */}
 
 
       <Contact/>

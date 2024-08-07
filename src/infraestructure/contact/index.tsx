@@ -12,7 +12,6 @@ export const Contact = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
-//   use questioneri category resultl ditails styles
     
   return (
     <div className=''>

@@ -1,13 +1,14 @@
-/* @keyframes MoveY {
+ @keyframes MoveY {
     0% { transform: translateY(0) scale(1); }
     10% { transform: translateY(0px) scale(1.2); }
   }
   
   @keyframes colorCircle {
     0% { background-color: rgb(99 102 241 / 1); }
-    50% { background-color: rgb(99 102 241 / 0.8); }
+    50% { background-color: rgb(79, 70, 229); }
     100% { background-color: rgb(99 102 241 / 1); }
-  } */
+  } 
+
   @keyframes pulseShadow {
     0% { box-shadow: 0 0 0px rgba(99, 102, 241, 0.7); }
     50% { box-shadow: 0 0 10px rgba(99, 102, 241, 1); }
@@ -16,12 +17,14 @@
   
   @keyframes pulseBorder {
     0% { border-color: rgba(99, 102, 241, 0.7); }
-    50% { border-color: rgba(99, 102, 241, 1); }
+    50% { border-color: rgba(99, 102, 241, 1);; }
     100% { border-color: rgba(99, 102, 241, 0.7); }
   }
 
 
   .typing-circle {
-    animation: pulseShadow 3s ease-in-out infinite, pulseBorder 3s ease-in-out infinite;
+    animation: pulseShadow 4s ease-in-out infinite, 
+    pulseBorder 4s ease-in-out infinite,
+    colorCircle 4s ease-in-out infinite;
   }
   

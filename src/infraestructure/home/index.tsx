@@ -3,7 +3,7 @@ import './index.css'
 
 export const Home = () => {
     return (
-        <div id='home' className="relative w-full flex flex-col justify-center items-center bg-red sm:py-80 py-40">
+        <div id='home' className="relative w-full flex flex-col justify-center items-center bg-red sm:py-82 py-80">
           <BackgroundSvg className="absolute h-full -z-10"/>
             <div>
                 <h1 className="p-2 sm:text-6xl text-3xl font-semibold tracking-tight typing text-primary-100 ">Hey, I'm Luciano de la Rubia</h1>

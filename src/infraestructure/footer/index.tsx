@@ -3,11 +3,11 @@ import LinkedInLogo from '../../assets/Linkedin.svg'
 
 export const Footer = () => {
   return (
-    <div className="w-full bg-slate-500">
-        <div className='flex justify-center p-5'>
+    <div className="w-full bg-secondary-100">
+        <div className='flex justify-around p-5'>
 
-            <GithubLogo className='w-10 h-10 text-white'/>
-            <LinkedInLogo className='w-10 h-10 text-white'/>
+            <GithubLogo className='w-10 h-10 text-primary-100'/>
+            <LinkedInLogo className='w-10 h-10 text-primary-100'/>
 
         
 
