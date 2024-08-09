@@ -1,4 +1,4 @@
-import BackgroundSvg from "../../assets/bf-triangule.svg";
+import BackgroundSvg from "../../assets/AnimatedShape.svg";
 import { useFormik } from "formik";
 
 export const Contact = () => {
@@ -14,12 +14,19 @@ export const Contact = () => {
   });
 
   return (
-    <div className=" py-20 bg-secondary-100">
-      {/* <BackgroundSvg className="absolute h-auto -z-10" /> */}
+    <div
+      className=" py-20 "
+      style={{
+        backgroundImage: `url("")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* <BackgroundSvg className="absolute w-[100%] h-auto -z-10" /> */}
 
       <form
         onSubmit={formik.handleSubmit}
-        className="flex flex-col space-y-2 pb-8 pt-6 px-5 w-full max-w-lg mx-auto bg-white shadow-md rounded-md"
+        className="flex flex-col space-y-2 pb-8 pt-6 px-5 max-w-xl mx-auto bg-white shadow-md rounded-md"
       >
         <div className="py-2 px-4 block">
           <label
@@ -66,7 +73,7 @@ export const Contact = () => {
           <textarea
             id="message"
             rows={8}
-            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
+            className="max-h-[15rem] block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Leave a comment..."
           ></textarea>
         </div>
