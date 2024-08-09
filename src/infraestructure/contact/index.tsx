@@ -17,7 +17,7 @@ export const Contact = () => {
     <div
       className=" py-20 "
       style={{
-        backgroundImage: `url("")`,
+        backgroundImage: `url("https://raw.githubusercontent.com/luciano-dlr/portfolio/d7ccd04774f7919e3c614458fb1e0808ca30a11b/src/assets/AnimatedShape.svg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
