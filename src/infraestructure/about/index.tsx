@@ -34,18 +34,18 @@ export const About = () => {
                         <h1 className="py-12 text-4xl font-semibold text-center">My Skills</h1>
                         <div className="grid">
                             <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 gap-1 py-4">
-                                <SkillsLogo title='Typescript' logo={<TypescriptLogo className='w-20 h-20 drop-shadow-lg'/>}/>
                                 <SkillsLogo title='React' logo={<ReactLog className='w-20 h-20 drop-shadow-lg'/>}/>
-                                <SkillsLogo title='Tailwindcss' logo={<TailwindcssLogo className='w-20 h-20 drop-shadow-lg' />} />
-                                <SkillsLogo title='Javascript' logo={<JavascriptLogo className='w-20 h-20 drop-shadow-lg' />} />
-                                <SkillsLogo title='Html' logo={<HtmlLogo className='w-20 h-20 drop-shadow-lg' />} />
                                 <SkillsLogo title='Angular' logo={<AngularLogo className='w-20 h-20 drop-shadow-md' />} />
+                                <SkillsLogo title='Typescript' logo={<TypescriptLogo className='w-20 h-20 drop-shadow-lg'/>}/>
+                                <SkillsLogo title='Javascript' logo={<JavascriptLogo className='w-20 h-20 drop-shadow-lg' />} />
+                                <SkillsLogo title='Tailwindcss' logo={<TailwindcssLogo className='w-20 h-20 drop-shadow-lg' />} />
+                                <SkillsLogo title='Html' logo={<HtmlLogo className='w-20 h-20 drop-shadow-lg' />} />
+                                <SkillsLogo title='Sass' logo={<SassLogo className='w-20 h-20 drop-shadow-lg' />} />
+                                <SkillsLogo title='Css' logo={<CssLogo className='w-20 h-20 drop-shadow-lg' />} />
+                                <SkillsLogo title='Firebase' logo={<FirebaseLogo className='w-20 h-20 drop-shadow-lg' />} />
                                 <SkillsLogo title='Git' logo={<GitLogo className='w-20 h-20 drop-shadow-lg' />} />
                                 <SkillsLogo title='Zustand' logo={<ZustandLogo className='w-20 h-20 drop-shadow-lg' />} />
-                                <SkillsLogo title='Firebase' logo={<FirebaseLogo className='w-20 h-20 drop-shadow-lg' />} />
-                                <SkillsLogo title='Sass' logo={<SassLogo className='w-20 h-20 drop-shadow-lg' />} />
                                 <SkillsLogo title='Figma' logo={<FigmaLogo className='w-20 h-20 drop-shadow-lg' />} />
-                                <SkillsLogo title='Css' logo={<CssLogo className='w-20 h-20 drop-shadow-lg' />} />
                             </div>
                         </div>
                     </div>
