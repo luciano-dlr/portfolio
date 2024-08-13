@@ -6,7 +6,6 @@ import { Bounce, toast } from "react-toastify";
 
 export const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
-
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -132,9 +131,7 @@ export const Contact = () => {
             className="transition ease-in-out hover:-translate-y-0 hover:scale-100 hover:bg-indigo-600 shadow-sm shadow-indigo-500/50 rounded-md bg-indigo-500 text-white text-base py-1 px-2 mx-4"
             type="submit"
           >
-            {/* Submit */}
             {isLoading ? (
-              // Display loader while submitting
               <span className="loader cursor-not-allowed ">
                 <span className="">.</span>
                 <span className="">.</span>
@@ -142,7 +139,6 @@ export const Contact = () => {
                 <span className="">.</span>
               </span>
             ) : (
-              // Display submit text when not loading
               "Submit"
             )}
           </button>
