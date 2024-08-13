@@ -1,4 +1,4 @@
-import GithubLogo from "../../assets/Github.svg";
+import GithubLogo from "../../assets/githubLogo.svg";
 import LinkedInLogo from "../../assets/LinkedIn-Logo.svg";
 
 export const Footer = () => {
@@ -17,10 +17,9 @@ export const Footer = () => {
 
         <div className="grid grid-cols-1  gap-2 ">
           <h2 className="font-bold text-base">Social</h2>
-          <div className="flex">
+          <div className="flex justify-between items-center gap-2">
             <LinkedInLogo className="w-8 h-8 text-primary-100" />
-            <LinkedInLogo className="w-8 h-8 text-primary-100" />
-            <LinkedInLogo className="w-8 h-8 text-primary-100" />
+            <GithubLogo className="w-8 h-8 text-primary-100" />
           </div>
         </div>
       </div>

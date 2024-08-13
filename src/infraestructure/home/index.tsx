@@ -18,7 +18,7 @@ export const Home = () => {
       </div>
       <div className="w-[350px] md:w-[600px] text-center">
         <p className="py-2 font-normal text-lg">
-          A Result-Oriented Web Developer building and managing Websites and Web
+          A Result-Oriented Web Developer building and managing Websites and
           Applications that leads to the success of the overall product
         </p>
       </div>
