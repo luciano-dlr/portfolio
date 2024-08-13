@@ -27,7 +27,7 @@ export const Contact = () => {
             user_email: values.email,
             message: values.message,
           },
-          "X1_yxCzyMgpTKrtyz"
+          import.meta.env.VITE_EMAILJS_LEIO_KEY
         );
 
         console.log("SUCCESS!", response.status, response.text);
