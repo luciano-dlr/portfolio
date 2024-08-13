@@ -36,3 +36,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+// todo Guion en copyright
