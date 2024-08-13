@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
 import "./index.css";
@@ -6,6 +6,10 @@ import { Bounce, toast } from "react-toastify";
 
 export const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
+
+  const formRef = useRef(null);
+
+  // console.log(formRef.current);
 
   const formik = useFormik({
     initialValues: {
@@ -25,7 +29,7 @@ export const Contact = () => {
             user_email: values.email,
             message: values.message,
           },
-          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+          "X1_yxCzyMgpTKrtyz"
         );
 
         console.log("SUCCESS!", response.status, response.text);
