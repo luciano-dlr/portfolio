@@ -1,42 +1,68 @@
+import { useState } from "react";
 import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
+import "./index.css";
+import { Bounce, toast } from "react-toastify";
 
 export const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       message: "",
     },
-    onSubmit: (values, { resetForm }) => {
-      emailjs
-        .send(
-          "service_ne0uj9o",
-          "template_dyunbs8",
+    onSubmit: async (values, { resetForm }) => {
+      setIsLoading(true);
+
+      try {
+        const response = await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           {
-            from_name: values.name,
-            from_email: values.email,
+            user_name: values.name,
+            user_email: values.email,
             message: values.message,
           },
-          "X1_yxCzyMgpTKrtyz"
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-            alert("Message sent successfully!");
-            resetForm(); // Resetea el formulario después de enviar
-          },
-          (error) => {
-            console.log("FAILED...", error);
-            alert("Failed to send the message, please try again.");
-          }
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         );
+
+        console.log("SUCCESS!", response.status, response.text);
+        toast.success("Form Submitted Fuccessfully!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+        resetForm();
+      } catch (error) {
+        console.log("FAILED...", error);
+        toast.error("Failed to send the message, please try again.", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+      } finally {
+        setIsLoading(false);
+      }
     },
   });
 
   return (
-    <div>
-      <div className="relative py-20">
+    <div id="contact">
+      <div className="relative py-32">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -106,7 +132,19 @@ export const Contact = () => {
             className="transition ease-in-out hover:-translate-y-0 hover:scale-100 hover:bg-indigo-600 shadow-sm shadow-indigo-500/50 rounded-md bg-indigo-500 text-white text-base py-1 px-2 mx-4"
             type="submit"
           >
-            Submit
+            {/* Submit */}
+            {isLoading ? (
+              // Display loader while submitting
+              <span className="loader cursor-not-allowed ">
+                <span className="">.</span>
+                <span className="">.</span>
+                <span className="">.</span>
+                <span className="">.</span>
+              </span>
+            ) : (
+              // Display submit text when not loading
+              "Submit"
+            )}
           </button>
         </form>
       </div>

@@ -15,7 +15,7 @@ import CssLogo from "../../assets/CssLogo.svg";
 
 export const About = () => {
   return (
-    <div className="flex flex-col items-center ">
+    <div id="about" className="flex flex-col items-center">
       <div className="flex flex-col justify-center items-center mt-20 ">
         <h1 className="text-4xl font-semibold">About Me</h1>
         <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg" />
@@ -26,10 +26,7 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <div
-        id="about"
-        className="grid grid-cols-1 sm:grid-cols-2 w-full py-10 sm:px-8 sm:mx-8 items-start"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full py-10 sm:px-8 sm:mx-8 items-start">
         <div className="flex flex-col sm:px-20 py-2 items-center">
           <h1 className="py-12 text-4xl font-semibold  text-center">History</h1>
           <History />

@@ -17,9 +17,16 @@ export const Footer = () => {
 
         <div className="grid grid-cols-1  gap-2 ">
           <h2 className="font-bold text-base">Social</h2>
-          <div className="flex justify-between items-center gap-2">
-            <LinkedInLogo className="w-8 h-8 text-primary-100" />
-            <GithubLogo className="w-8 h-8 text-primary-100" />
+          <div className="flex sm:justify-between items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/luciano-de-la-rubia/"
+              target="_blank"
+            >
+              <LinkedInLogo className="w-8 h-8 text-primary-100" />
+            </a>
+            <a href="https://github.com/luciano-dlr" target="_blank">
+              <GithubLogo className="w-8 h-8 text-primary-100" />
+            </a>
           </div>
         </div>
       </div>
