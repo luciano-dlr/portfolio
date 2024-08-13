@@ -7,8 +7,6 @@ import { Bounce, toast } from "react-toastify";
 export const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
 
-  // console.log(formRef.current);
-
   const formik = useFormik({
     initialValues: {
       name: "",
