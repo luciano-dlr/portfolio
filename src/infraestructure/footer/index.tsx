@@ -31,10 +31,8 @@ export const Footer = () => {
         </div>
       </div>
       <p className="text-center pt-5 font-normal text-xs">
-        © Copyright 2024 . Made by Luciano de la Rubia
+        © Copyright 2024 - Made by Luciano de la Rubia
       </p>
     </div>
   );
 };
-
-// todo Guion en copyright
