@@ -11,8 +11,9 @@ export const Footer = () => {
           </h2>
           <div className="w-[350px] md:w-[600px] dark:text-secondary-100">
             <p className="py-2 font-normal text-base">
-              A Result-Oriented Web Developer building and managing Websites and
-              Web Applications that leads to the success of the overall product
+              Passionate Frontend Developer specializing in React and React
+              Native, dedicated to creating and optimizing web / mobile
+              applications for exceptional user experiences.
             </p>
           </div>
         </div>

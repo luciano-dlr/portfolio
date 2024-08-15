@@ -21,8 +21,11 @@ export const About = () => {
         <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg dark:bg-indigo-300" />
         <div className="w-[350px] md:w-[600px] text-center py-4">
           <p className="py-2 text-lg font-light dark:text-secondary-100">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
+            I am a software developer with a strong focus on React, bringing
+            extensive experience in both web and mobile development. I
+            specialize in React Native and have a deep background in web
+            development using libraries for route management, global state
+            handling, and API integration.
           </p>
         </div>
       </div>
@@ -33,15 +36,17 @@ export const About = () => {
           </h1>
           <History />
         </div>
-        <div className="flex flex-col sm:px-20 py-2">
+        <div className="flex flex-col sm:px-20 py-2 h-full min-h-full">
           <h1 className="py-12 text-4xl font-semibold text-center dark:text-white">
             My Skills
           </h1>
-          <div className="grid">
-            <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 gap-1 py-4">
+          <div className="grid h-full min-h-full ">
+            <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 pb-32  gap-1 py-4 h-full">
               <SkillsLogo
                 title="React"
-                logo={<ReactLog className="w-20 h-20 drop-shadow-lg" />}
+                logo={
+                  <ReactLog className="w-20 h-20 drop-shadow-lg flex justify-center items-center" />
+                }
               />
               <SkillsLogo
                 title="Angular"

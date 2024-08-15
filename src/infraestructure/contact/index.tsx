@@ -129,7 +129,7 @@ export const Contact = () => {
             ></textarea>
           </div>
           <button
-            className="transition ease-in-out hover:-translate-y-0 hover:scale-100 hover:bg-indigo-600 dark:hover:bg-indigo-950 shadow-sm shadow-indigo-500/50 dark:shadow-neutral-900 rounded-md bg-indigo-500 dark:bg-neutral-500 text-white text-base py-1 px-2 mx-4"
+            className="transition ease-in-out hover:bg-indigo-600 dark:hover:bg-indigo-950 shadow-sm shadow-indigo-500/50 dark:shadow-neutral-900 rounded-md bg-indigo-500 dark:bg-neutral-500 text-white text-base py-1 px-2 mx-4"
             type="submit"
           >
             {isLoading ? (

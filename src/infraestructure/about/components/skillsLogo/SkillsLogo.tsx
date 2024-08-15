@@ -25,7 +25,7 @@ export const SkillsLogo: FC<SkillsLogoProps> = ({ logo: Logo, title }) => {
   return (
     <div className="relative inline-block">
       <div
-        onClick={handleClick}
+        onMouseEnter={handleClick}
         className="flex items-center justify-center cursor-pointer"
       >
         {Logo}

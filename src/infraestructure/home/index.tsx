@@ -22,8 +22,8 @@ export const Home = () => {
       </div>
       <div className="w-[350px] md:w-[600px] text-center">
         <p className="py-2 font-normal text-lg dark:text-secondary-100">
-          A Result-Oriented Web Developer building and managing Websites and
-          Applications that leads to the success of the overall product
+          Passionate Developer with extensive experience in crafting and
+          optimizing applications across web and mobile platforms.
         </p>
       </div>
       <div className="p-3 pt-20 text-xl font-semibold">
