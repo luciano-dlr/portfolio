@@ -11,7 +11,7 @@ const WorkHistory: WorkHistoryItems[] = [
     company: "Explender SRL",
     duration: "May 2023 - Present",
     description:
-      "Development and migration of an Angular PWA to React Native. Implemented core concepts, components, state management, navigation, and styling. Implemented user authentication, API integration, and data management.",
+      "Development and migration of an Angular PWA to React Native. Implemented core concepts, components, state management, navigation, and styling. User authentication, API integration, and data management.",
   },
   {
     role: "Frontend Developer",
