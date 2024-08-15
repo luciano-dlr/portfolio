@@ -28,7 +28,7 @@ export const Home = () => {
       </div>
       <div className="p-3 pt-20 text-xl font-semibold">
         <a href="#contact">
-          <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 shadow-lg shadow-indigo-500/50 dark:shadow-zinc-800  dark:shadow-md rounded-md bg-indigo-500 dark:bg-indigo-600 dark:text-secondary-100 text-white text-lg py-1 px-10 my-1 mx-20">
+          <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 dark:hover:bg-slate-800 shadow-lg shadow-indigo-500/50 dark:shadow-zinc-800  dark:shadow-md rounded-md bg-indigo-500 dark:bg-indigo-900 dark:text-secondary-100 text-white text-lg py-1 px-10 my-1 mx-20">
             Contact
           </button>
         </a>
