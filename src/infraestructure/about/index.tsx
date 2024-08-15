@@ -15,12 +15,12 @@ import CssLogo from "../../assets/CssLogo.svg";
 
 export const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center">
+    <div id="about" className="flex flex-col items-center dark:bg-neutral-500">
       <div className="flex flex-col justify-center items-center mt-20 ">
-        <h1 className="text-4xl font-semibold">About Me</h1>
-        <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg" />
+        <h1 className="text-4xl font-semibold dark:text-white">About Me</h1>
+        <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg dark:bg-indigo-300" />
         <div className="w-[350px] md:w-[600px] text-center py-4">
-          <p className="py-2 text-lg font-light">
+          <p className="py-2 text-lg font-light dark:text-secondary-100">
             Here you will find more information about me, what I do, and my
             current skills mostly in terms of programming and technology
           </p>
@@ -28,11 +28,13 @@ export const About = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full py-10 sm:px-8 sm:mx-8 items-start">
         <div className="flex flex-col sm:px-20 py-2 items-center">
-          <h1 className="py-12 text-4xl font-semibold  text-center">History</h1>
+          <h1 className="py-12 text-4xl font-semibold  text-center dark:text-white">
+            History
+          </h1>
           <History />
         </div>
         <div className="flex flex-col sm:px-20 py-2">
-          <h1 className="py-12 text-4xl font-semibold text-center">
+          <h1 className="py-12 text-4xl font-semibold text-center dark:text-white">
             My Skills
           </h1>
           <div className="grid">
