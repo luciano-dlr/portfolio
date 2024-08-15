@@ -21,11 +21,10 @@ export const About = () => {
         <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg dark:bg-indigo-300" />
         <div className="w-[350px] md:w-[600px] text-center py-4">
           <p className="py-2 text-lg font-light dark:text-secondary-100">
-            I'm a software developer with a strong focus on React, bringing
-            extensive experience in both web and mobile development. I
-            specialize in React Native and have a deep background in web
-            development using libraries for route management, global state
-            handling, and API integration.
+            I'm a developer with a strong focus on React, bringing extensive
+            experience in both web and mobile development. I specialize in React
+            Native and have a deep background in web development using libraries
+            for route management, global state handling, and API integration.
           </p>
         </div>
       </div>
