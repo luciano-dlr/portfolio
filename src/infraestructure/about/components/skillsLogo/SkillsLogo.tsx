@@ -16,7 +16,7 @@ export const SkillsLogo: FC<SkillsLogoProps> = ({ logo: Logo, title }) => {
     if (showTooltip) {
       const timer = setTimeout(() => {
         setShowTooltip(false);
-      }, 3000);
+      }, 2000);
 
       return () => clearTimeout(timer);
     }

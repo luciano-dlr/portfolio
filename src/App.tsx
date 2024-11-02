@@ -5,6 +5,7 @@ import { Footer } from "./infraestructure/footer";
 import { Contact } from "./infraestructure/contact";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, Bounce } from "react-toastify";
+import { Projects } from "./infraestructure/projects";
 
 export const App = () => {
   return (
@@ -25,6 +26,7 @@ export const App = () => {
       <Navbar />
       <Home />
       <About />
+      <Projects />
       <Contact />
       <Footer />
     </>

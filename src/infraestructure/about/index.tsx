@@ -9,9 +9,9 @@ import AngularLogo from "../../assets/AngularLogo.svg";
 import GitLogo from "../../assets/GitLogo.svg";
 import ZustandLogo from "../../assets/ZustandLogo.svg";
 import FirebaseLogo from "../../assets/FirebaseLogo.svg";
-import SassLogo from "../../assets/SassLogo.svg";
 import FigmaLogo from "../../assets/FigmaLogo.svg";
 import CssLogo from "../../assets/CssLogo.svg";
+import SwiftLogo from "../../assets/Swift.svg";
 
 export const About = () => {
   return (
@@ -52,6 +52,10 @@ export const About = () => {
                 logo={<AngularLogo className="w-20 h-20 drop-shadow-md" />}
               />
               <SkillsLogo
+                title="Swift"
+                logo={<SwiftLogo className="w-20 h-20 drop-shadow-md" />}
+              />
+              <SkillsLogo
                 title="Typescript"
                 logo={<TypescriptLogo className="w-20 h-20 drop-shadow-lg" />}
               />
@@ -67,10 +71,7 @@ export const About = () => {
                 title="Html"
                 logo={<HtmlLogo className="w-20 h-20 drop-shadow-lg" />}
               />
-              <SkillsLogo
-                title="Sass"
-                logo={<SassLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
+
               <SkillsLogo
                 title="Css"
                 logo={<CssLogo className="w-20 h-20 drop-shadow-lg" />}
