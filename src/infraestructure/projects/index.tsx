@@ -28,7 +28,7 @@ export const Projects = () => {
       demoUrl: "https://luciano-de-la-rubia-private-notes.vercel.app/",
     },
     {
-      title: "Product Card - Library",
+      title: "Product Card - npm - Library",
       description:
         "Es una libreria en npm que resuelve el problema de crear un item donde necesitas manejar un contador y el valor maximo",
       technologies: ["React", "TypeScript", "npm-package",],
