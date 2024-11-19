@@ -63,15 +63,25 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
     >
+
+
       {/* Fondo alternativo cuando el SVG está oculto */}
       <div className="block sm:hidden absolute inset-0 w-full h-full z-[-1] bg-white dark:bg-[#737373] transition-colors duration-300"></div>
 
       {/* SVG de fondo */}
       <BackgroundSvg className="hidden sm:block absolute inset-0 w-full h-full z-[-1] filter dark:invert-[.80] dark:hue-rotate-180 dark:bg-[#737373] bg-white opacity-25 dark:opacity-100 transition-opacity duration-300" />
 
+
+      <div>
+        <h1 className="py-12 text-4xl font-semibold text-center dark:text-neutral-50">
+          Contact
+        </h1>
+      </div>
+
       <div className="relative w-full max-w-xl px-5 py-8 bg-white shadow-md rounded-md dark:bg-[#1F1F1F]">
+
         <form
           onSubmit={formik.handleSubmit}
           className="flex flex-col space-y-2"

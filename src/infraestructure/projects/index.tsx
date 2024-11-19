@@ -6,6 +6,7 @@ import PokedexAppVideo from "../../assets/pokedex-app.gif";
 import CalculatorAppVideo from "../../assets/calculator-app.gif";
 import RollDiceAppIos from "../../assets/roll-dice-swift.gif";
 import XylophoneAppIos from "../../assets/xylophone.gif";
+import ProductCardLibrary from "../../assets/npm-product-card-leio.png";
 
 interface Project {
   title: string;
@@ -17,6 +18,7 @@ interface Project {
 
 export const Projects = () => {
   const projects: Project[] = [
+
     {
       title: "Private Notes",
       description:
@@ -24,6 +26,14 @@ export const Projects = () => {
       technologies: ["React", "TypeScript", "Web"],
       gifUrl: PrivateNotesVideo,
       demoUrl: "https://luciano-de-la-rubia-private-notes.vercel.app/",
+    },
+    {
+      title: "Product Card - Library",
+      description:
+        "Es una libreria en npm que resuelve el problema de crear un item donde necesitas manejar un contador y el valor maximo",
+      technologies: ["React", "TypeScript", "npm-package",],
+      gifUrl: ProductCardLibrary,
+      demoUrl: "https://www.npmjs.com/package/product-card-leio",
     },
     {
       title: "Movies App",
@@ -77,6 +87,7 @@ export const Projects = () => {
       gifUrl: XylophoneAppIos,
       demoUrl: "https://github.com/luciano-dlr/xylophone",
     },
+
   ];
 
   return (
