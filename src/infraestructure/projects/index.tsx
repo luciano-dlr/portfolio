@@ -30,7 +30,7 @@ export const Projects = () => {
     {
       title: "Product Card - npm - Library",
       description:
-        "Es una libreria en npm que resuelve el problema de crear un item donde necesitas manejar un contador y el valor maximo",
+        "It is a library in npm that solves the problem of creating an item where you need to manage a counter and the maximum value",
       technologies: ["React", "TypeScript", "npm-package",],
       gifUrl: ProductCardLibrary,
       demoUrl: "https://www.npmjs.com/package/product-card-leio",
