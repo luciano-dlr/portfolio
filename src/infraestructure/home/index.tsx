@@ -18,7 +18,7 @@ export const Home = () => {
       </div>
       <div className="py-1 fade-in delay-200">
         <h2 className="p-2 text-3xl font-medium dark:text-secondary-100">
-          Frontend Developer
+          Full Stack Developer
         </h2>
       </div>
       <div className="w-[350px] md:w-[600px] text-center fade-in delay-400">

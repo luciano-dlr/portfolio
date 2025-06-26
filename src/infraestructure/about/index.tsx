@@ -12,6 +12,7 @@ import FirebaseLogo from "../../assets/FirebaseLogo.svg";
 import FigmaLogo from "../../assets/FigmaLogo.svg";
 import CssLogo from "../../assets/CssLogo.svg";
 import SwiftLogo from "../../assets/Swift.svg";
+import NetLogo from "../../assets/Microsoft_.NET_logo.svg"
 
 export const About = () => {
   return (
@@ -21,11 +22,7 @@ export const About = () => {
         <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg dark:bg-indigo-300" />
         <div className="w-[350px] md:w-[600px] text-center py-4">
           <p className="py-2 text-lg font-light dark:text-secondary-100">
-            I'm a developer with a strong focus on React, bringing extensive
-            experience in both web and mobile development. I specialize in React
-            Native and have a deep background in web development using libraries
-            for route management, global state handling, and API integration.
-          </p>
+            Full-Stack Developer specializing in backend architecture, scalable APIs (.NET/Node.js), and database systems. Frontend proficient (React/Angular) with expertise in state management and high-performance solutions.          </p>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full py-10 sm:px-8 sm:mx-8 items-start">
@@ -64,8 +61,8 @@ export const About = () => {
                 logo={<JavascriptLogo className="w-20 h-20 drop-shadow-lg" />}
               />
               <SkillsLogo
-                title="Tailwindcss"
-                logo={<TailwindcssLogo className="w-20 h-20 drop-shadow-lg" />}
+                title=".NET"
+                logo={<NetLogo className="w-20 h-20 drop-shadow-lg rounded-sm" />}
               />
               <SkillsLogo
                 title="Html"
