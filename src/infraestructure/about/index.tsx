@@ -2,7 +2,6 @@ import { SkillsLogo } from "./components/skillsLogo/SkillsLogo";
 import { History } from "./components/history/HistoryLinear";
 import ReactLog from "../../assets/react.svg";
 import TypescriptLogo from "../../assets/TypescriptLogo.svg";
-import TailwindcssLogo from "../../assets/TailwindcssLogo.svg";
 import JavascriptLogo from "../../assets/JavascriptLogo.svg";
 import HtmlLogo from "../../assets/Html5Logo.svg";
 import AngularLogo from "../../assets/AngularLogo.svg";
