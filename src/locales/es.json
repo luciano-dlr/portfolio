@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "toggleMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "toggleDarkMode": "Cambiar modo oscuro"
+  },
+  "home": {
+    "greeting": "Hey, soy Luciano de la Rubia",
+    "role": "Full Stack Developer",
+    "description": "Especializado en arquitectura backend, APIs escalables y sistemas de bases de datos. Proficiente en frontend con experiencia en gestión de estado y soluciones de alto rendimiento.",
+    "projects": "Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Desarrollador Full Stack especializado en arquitectura backend, APIs escalables (.NET/NestJS) y sistemas de bases de datos. Proficiente en frontend (React/Angular) con experiencia en gestión de estado y soluciones de alto rendimiento.",
+    "history": "Historial",
+    "skills": "Mis Skills",
+    "present": "Presente",
+    "mindfactory": "Microservicios con NestJS para el equipo de Rentas de Córdoba Argentina",
+    "farmacias": "Sistema de auditoría de cajas de cobro con NestJS, PostgreSQL y React. Automatización de auditorías con Cron-Jobs, MySQL y Redis.",
+    "explender": "APIs RESTful con ASP.NET Core. Autenticación JWT y autorización basada en roles. Frontend con Angular y React, migración PWA a React Native Expo",
+    "criteria": "Desarrollo de funcionalidades en React. Formularios dinámicos, sistemas de login, filtrado de datos y diseño de layouts."
+  },
+  "projects": {
+    "title": "Proyectos Personales",
+    "viewDemo": "Ver Demo"
+  },
+  "projectsList": {
+    "privateNotes": "Una aplicación web que utiliza el almacenamiento de tu navegador para crear notas privadas que solo vos podés ver en tu computadora o dispositivo móvil. Es almacenamiento local, así que tus notas no se pueden compartir con otros.",
+    "productCard": "Una librería en npm que resuelve el problema de crear un producto donde necesitás gestionar un contador y el valor máximo.",
+    "moviesApp": "Una aplicación que consulta las películas más populares del momento desde la TMDB API. El estilo de la app se basa en el color predominante de cada imagen promocional, y te permite ver información detallada sobre la película, como su reparto.",
+    "pokedex": "Una aplicación móvil multiplataforma que replica la funcionalidad de la icónica Pokédex de la serie Pokémon. Utilizando la PokeAPI, permite buscar tus Pokémon favoritos y ver información detallada presentada en tarjetas visuales adaptadas al esquema de colores de cada Pokémon.",
+    "calculator": "Desarrollada con React Native y TypeScript, esta versátil calculadora ofrece una experiencia familiar y fácil de usar en dispositivos iOS y Android. Con una UI intuitiva inspirada en la estética limpia de iOS, permite realizar diversas operaciones matemáticas con facilidad.",
+    "rollDice": "Esta aplicación iOS desarrollada en Swift simula la experiencia clásica de lanzar dados. Equipada con dos dados virtuales, la app genera valores aleatorios en cada tirada.",
+    "xylophone": "Una aplicación iOS desarrollada en Swift que simula un xilófono. Cada tecla produce un sonido distinto al tocarla, proporcionando una experiencia musical divertida y educativa."
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "namePlaceholder": "Ingresa tu nombre",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "Ingresa tu correo",
+    "message": "Tu mensaje",
+    "messagePlaceholder": "Dejá tu mensaje...",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "successMessage": "¡Formulario enviado con éxito!",
+    "errorMessage": "Error al enviar el mensaje, por favor intentá de nuevo."
+  },
+  "footer": {
+    "description": "Desarrollador Full Stack especializado en arquitectura backend, APIs escalables y sistemas de bases de datos. Proficiente en frontend con experiencia en gestión de estado y soluciones de alto rendimiento.",
+    "copyright": "© Copyright 2026 - Luciano de la Rubia",
+    "social": "Redes"
+  }
+}

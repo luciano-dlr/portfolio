@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import BackgroundSvg from "../../assets/imagenrara.svg";
 import ExternalLinkLogo from "../../assets/external-link.svg";
 import PrivateNotesVideo from "../../assets/private-notes-web.gif";
@@ -10,84 +11,64 @@ import ProductCardLibrary from "../../assets/npm-product-card-leio.png";
 
 interface Project {
   title: string;
-  description: string;
+  descriptionKey: string;
   technologies: string[];
   gifUrl: any;
   demoUrl: string;
 }
 
 export const Projects = () => {
+  const { t } = useTranslation();
   const projects: Project[] = [
-
     {
       title: "Private Notes",
-      description:
-        "A web app that uses your browser's storage to create private notes that only you can see on your computer or mobile device. It's local storage, so your notes can't be shared with others..",
+      descriptionKey: "projectsList.privateNotes",
       technologies: ["React", "TypeScript", "Web"],
       gifUrl: PrivateNotesVideo,
       demoUrl: "https://luciano-de-la-rubia-private-notes.vercel.app/",
     },
     {
       title: "Product Card - npm - Library",
-      description:
-        "It is a library in npm that solves the problem of creating an item where you need to manage a counter and the maximum value",
-      technologies: ["React", "TypeScript", "npm-package",],
+      descriptionKey: "projectsList.productCard",
+      technologies: ["React", "TypeScript", "npm-package"],
       gifUrl: ProductCardLibrary,
       demoUrl: "https://www.npmjs.com/package/product-card-leio",
     },
     {
       title: "Movies App",
-      description:
-        "An application that queries the most popular movies of the moment from the TMDB API. The app's style is based on the predominant color of each movie's promotional image, and it allows you to view detailed information about the movie, such as its cast.",
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Movies API",
-        "Ios",
-        "Android",
-      ],
+      descriptionKey: "projectsList.moviesApp",
+      technologies: ["React Native", "TypeScript", "Movies API", "Ios", "Android"],
       gifUrl: MoviesAppVideo,
       demoUrl: "https://github.com/luciano-dlr/ReactNative-MoviesApp",
     },
     {
       title: "Pokedex App",
-      description:
-        "A cross-platform mobile app that replicates the functionality of the iconic Pokedex from the Pokémon series. Utilizing the PokeAPI, this app allows users to search for their favorite Pokémon and view detailed information presented in visually appealing cards tailored to each Pokémon's color scheme. Built with React Native and TypeScript for efficient development and a native-like user experience on both iOS and Android platforms.",
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Poke API",
-        "Ios",
-        "Android",
-      ],
+      descriptionKey: "projectsList.pokedex",
+      technologies: ["React Native", "TypeScript", "Poke API", "Ios", "Android"],
       gifUrl: PokedexAppVideo,
       demoUrl: "https://github.com/luciano-dlr/ReactNative-Pokedex",
     },
     {
       title: "Calculator App",
-      description:
-        "Built with React Native and TypeScript, this versatile calculator app delivers a familiar and user-friendly experience across both iOS and Android devices. Featuring an intuitive UI inspired by the clean aesthetics of iOS design, the app empowers users to tackle various mathematical operations with ease.",
+      descriptionKey: "projectsList.calculator",
       technologies: ["React Native", "TypeScript", "Ios", "Android"],
       gifUrl: CalculatorAppVideo,
       demoUrl: "https://github.com/luciano-dlr/ReactNative-Calculator",
     },
     {
       title: "Roll Dice App",
-      description:
-        "This Swift-based iOS application simulates the classic experience of rolling dice. Equipped with two virtual dice, the app generates random values for each roll",
+      descriptionKey: "projectsList.rollDice",
       technologies: ["Swift", "Ios"],
       gifUrl: RollDiceAppIos,
       demoUrl: "https://github.com/luciano-dlr/RollDice",
     },
     {
       title: "Xylophone App",
-      description:
-        "A Swift-based iOS application that simulates a xylophone. Each key produces a distinct sound when tapped, providing a fun and educational musical experience.",
+      descriptionKey: "projectsList.xylophone",
       technologies: ["Swift", "Ios"],
       gifUrl: XylophoneAppIos,
       demoUrl: "https://github.com/luciano-dlr/xylophone",
     },
-
   ];
 
   return (
@@ -99,7 +80,7 @@ export const Projects = () => {
 
       <div className="container px-4 md:px-6 relative max-w-6xl mx-auto">
         <h1 className="py-12 text-4xl font-semibold text-center dark:text-neutral-50">
-          Personal Projects
+          {t('projects.title')}
         </h1>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-8 [column-fill:_balance] w-full">
           {projects.map((project, index) => (
@@ -135,7 +116,7 @@ export const Projects = () => {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground mb-6 dark:text-neutral-50">
-                  {project.description}
+                  {t(project.descriptionKey)}
                 </p>
                 <div className="flex justify-end">
                   <a
@@ -146,7 +127,7 @@ export const Projects = () => {
                   >
                     <ExternalLinkLogo className="mr-2 h-4 w-4 text-black dark:text-white" />
                     <span className="text-black dark:text-white">
-                      View Demo
+                      {t('projects.viewDemo')}
                     </span>
                   </a>
                 </div>

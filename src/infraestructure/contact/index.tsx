@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
 import { Bounce, toast } from "react-toastify";
@@ -6,6 +7,7 @@ import "./index.css";
 import BackgroundSvg from "../../assets/CircuitBoard.svg";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
@@ -29,7 +31,7 @@ export const Contact = () => {
         );
 
         console.log("SUCCESS!", response.status, response.text);
-        toast.success("Form Submitted Successfully!", {
+        toast.success(t('contact.successMessage'), {
           position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -43,7 +45,7 @@ export const Contact = () => {
         resetForm();
       } catch (error) {
         console.log("FAILED...", error);
-        toast.error("Failed to send the message, please try again.", {
+        toast.error(t('contact.errorMessage'), {
           position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -76,7 +78,7 @@ export const Contact = () => {
 
       <div>
         <h1 className="py-12 text-4xl font-semibold text-center dark:text-neutral-50">
-          Contact
+          {t('contact.title')}
         </h1>
       </div>
 
@@ -91,13 +93,13 @@ export const Contact = () => {
               htmlFor="name"
               className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
             >
-              Name
+              {t('contact.name')}
             </label>
             <input
               id="name"
               name="name"
               type="text"
-              placeholder="Enter Your Name"
+              placeholder={t('contact.namePlaceholder')}
               onChange={formik.handleChange}
               value={formik.values.name}
               className="bg-gray-50 dark:bg-[#333] dark:text-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
@@ -108,13 +110,13 @@ export const Contact = () => {
               htmlFor="email"
               className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
             >
-              Email Address
+              {t('contact.email')}
             </label>
             <input
               id="email"
               name="email"
               type="email"
-              placeholder="Enter Your Email"
+              placeholder={t('contact.emailPlaceholder')}
               onChange={formik.handleChange}
               value={formik.values.email}
               className="bg-gray-50 dark:bg-[#333] dark:text-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
@@ -126,14 +128,14 @@ export const Contact = () => {
               htmlFor="message"
               className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
             >
-              Your message
+              {t('contact.message')}
             </label>
             <textarea
               id="message"
               name="message"
               rows={8}
               className="max-h-[15rem] min-h-[4rem] block p-2.5 w-full text-sm text-gray-900 dark:text-white bg-gray-50 dark:bg-[#333] rounded-lg border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
-              placeholder="Leave a comment..."
+              placeholder={t('contact.messagePlaceholder')}
               onChange={formik.handleChange}
               value={formik.values.message}
             ></textarea>
@@ -144,13 +146,10 @@ export const Contact = () => {
           >
             {isLoading ? (
               <span className="loader cursor-not-allowed ">
-                <span className="">.</span>
-                <span className="">.</span>
-                <span className="">.</span>
-                <span className="">.</span>
+                {t('contact.sending')}
               </span>
             ) : (
-              "Submit"
+              t('contact.submit')
             )}
           </button>
         </form>

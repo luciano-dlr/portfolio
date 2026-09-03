@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import MoonLogo from "../../../assets/moon.svg";
 import SunLogo from "../../../assets/sun.svg";
 
 export const ThemeToggleButton = () => {
+  const { t } = useTranslation();
   const [theme, setTheme] = useState(
     () => localStorage.getItem("theme") || "light"
   );
@@ -20,7 +22,7 @@ export const ThemeToggleButton = () => {
     <button
       onClick={toggleDarkMode}
       className="p-2 rounded-full bg-white dark:bg-transparent transition-colors"
-      aria-label="Toggle Dark Mode"
+      aria-label={t('nav.toggleDarkMode')}
     >
       {theme === "light" ? (
         <SunLogo className="w-6 h-6 text-yellow-500" />

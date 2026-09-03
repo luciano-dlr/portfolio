@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import GithubLogo from "../../assets/githubLogo.svg";
 import LinkedInLogo from "../../assets/LinkedIn-Logo.svg";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full bg-[#f8f8f8] sm:px-28 px-4 py-5 dark:bg-[#737373]">
       <div className="flex flex-col sm:flex-row justify-between border-b p-5 ">
@@ -11,16 +14,14 @@ export const Footer = () => {
           </h2>
           <div className="w-[350px] md:w-[600px] dark:text-secondary-100">
             <p className="py-2 font-normal text-base">
-              Full Stack Developer specializing in backend architecture,
-              scalable APIs and database systems. Frontend proficient with
-              expertise in state management and high-performance solutions.
+              {t('footer.description')}
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-2 ">
           <h2 className="font-bold text-base dark:text-secondary-100">
-            Social
+            {t('footer.social')}
           </h2>
           <div className="flex sm:justify-between items-center gap-2">
             <a
@@ -36,7 +37,7 @@ export const Footer = () => {
         </div>
       </div>
       <p className="text-center pt-5 font-normal text-xs">
-        © Copyright 2026 -  Luciano de la Rubia
+        {t('footer.copyright')}
       </p>
     </div>
   );

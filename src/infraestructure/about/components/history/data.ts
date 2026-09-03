@@ -2,33 +2,38 @@ export type WorkHistoryItems = {
   role: string;
   company: string;
   duration: string;
-  description: string;
+  durationEn: string;
+  descriptionKey: string;
 };
 
 const WorkHistory: WorkHistoryItems[] = [
   {
-    role: "Full-stack Developer",
+    role: "Software Developer",
     company: "Mindfactory",
-    duration: "2026 - Presente",
-    description: "Microservicios con NestJS para el equipo de Rentas de Córdoba Argentina"
+    duration: "2025 - Presente",
+    durationEn: "2025 - Present",
+    descriptionKey: "about.mindfactory",
   },
   {
-    role: "Full-stack Developer",
+    role: "Software Developer",
     company: "Farmacias Sánchez Antonioli",
     duration: "2025 - 2026",
-    description: "Sistema de auditoría de cajas de cobro con NestJS, PostgreSQL y React. Automatización de auditorías con Cron-Jobs, MySQL y Redis."
+    durationEn: "2025 - 2026",
+    descriptionKey: "about.farmacias",
   },
   {
-    role: "Full-stack Developer",
+    role: "Software Developer",
     company: "Explender SRL",
     duration: "2023 - 2025",
-    description: "APIs RESTful con ASP.NET Core. Autenticación JWT y autorización basada en roles. Frontend con Angular y React, migracion pwa a react-native expo"
+    durationEn: "2023 - 2025",
+    descriptionKey: "about.explender",
   },
   {
     role: "Frontend Developer",
     company: "Criteria Studio SAS",
     duration: "2022 - 2023",
-    description: "Desarrollo de funcionalidades en React. Formularios dinámicos, sistemas de login, filtrado de datos y diseño de layouts."
+    durationEn: "2022 - 2023",
+    descriptionKey: "about.criteria",
   }
 ];
 

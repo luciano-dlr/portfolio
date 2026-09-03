@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { SkillsLogo } from "./components/skillsLogo/SkillsLogo";
 import { History } from "./components/history/HistoryLinear";
 import NestJsLogo from "../../assets/nest-js.svg";
@@ -12,29 +13,31 @@ import AngularLogo from "../../assets/AngularLogo.svg";
 import TypescriptLogo from "../../assets/TypescriptLogo.svg";
 import NetLogo from "../../assets/Microsoft_.NET_logo.svg";
 import GitLogo from "../../assets/GitLogo.svg";
-import FigmaLogo from "../../assets/FigmaLogo.svg";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
-    <div id="about" className="flex flex-col items-center dark:bg-neutral-500">
+    <div id="about" className="flex flex-col items-center dark:bg-neutral-500 pt-20">
       <div className="flex flex-col justify-center items-center mt-20 ">
-        <h1 className="text-4xl font-semibold dark:text-white">About Me</h1>
+        <h1 className="text-4xl font-semibold dark:text-white">{t('about.title')}</h1>
         <div className="w-12 h-1 my-2 bg-indigo-600 rounded-lg dark:bg-indigo-300" />
         <div className="w-[350px] md:w-[600px] text-center py-4">
           <p className="py-2 text-lg font-light dark:text-secondary-100">
-            Full-Stack Developer specializing in backend architecture, scalable APIs (.NET/Node.js), and database systems. Frontend proficient (React/Angular) with expertise in state management and high-performance solutions.          </p>
+            {t('about.description')}
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full py-10 sm:px-8 sm:mx-8 items-start">
         <div className="flex flex-col sm:px-20 py-2 items-center">
           <h1 className="py-12 text-4xl font-semibold  text-center dark:text-white">
-            History
+            {t('about.history')}
           </h1>
           <History />
         </div>
         <div className="flex flex-col sm:px-20 py-2 h-full min-h-full">
           <h1 className="py-12 text-4xl font-semibold text-center dark:text-white">
-            My Skills
+            {t('about.skills')}
           </h1>
           <div className="grid h-full min-h-full ">
             <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 pb-32 gap-1 py-4 h-full">
@@ -50,7 +53,6 @@ export const About = () => {
               <SkillsLogo title="Redis" logo={<RedisLogo className="w-20 h-20 drop-shadow-md" />} />
               <SkillsLogo title="Docker" logo={<DockerLogo className="w-20 h-20 drop-shadow-md" />} />
               <SkillsLogo title="Git" logo={<GitLogo className="w-20 h-20 drop-shadow-lg" />} />
-              {/* <SkillsLogo title="Figma" logo={<FigmaLogo className="w-20 h-20 drop-shadow-lg" />} /> */}
             </div>
           </div>
         </div>
