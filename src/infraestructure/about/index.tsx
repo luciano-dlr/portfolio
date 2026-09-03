@@ -1,17 +1,18 @@
 import { SkillsLogo } from "./components/skillsLogo/SkillsLogo";
 import { History } from "./components/history/HistoryLinear";
+import NestJsLogo from "../../assets/nest-js.svg";
+import DockerLogo from "../../assets/docker.svg";
+import PostgresqlLogo from "../../assets/postgresql-icon.svg";
+import MysqlLogo from "../../assets/mysql-icon.svg";
+import MongodbLogo from "../../assets/mongodb-icon.svg";
+import RedisLogo from "../../assets/redis-icon.svg";
+import NodejsLogo from "../../assets/nodejs-icon.svg";
 import ReactLog from "../../assets/react.svg";
-import TypescriptLogo from "../../assets/TypescriptLogo.svg";
-import JavascriptLogo from "../../assets/JavascriptLogo.svg";
-import HtmlLogo from "../../assets/Html5Logo.svg";
 import AngularLogo from "../../assets/AngularLogo.svg";
+import TypescriptLogo from "../../assets/TypescriptLogo.svg";
+import NetLogo from "../../assets/Microsoft_.NET_logo.svg";
 import GitLogo from "../../assets/GitLogo.svg";
-import ZustandLogo from "../../assets/ZustandLogo.svg";
-import FirebaseLogo from "../../assets/FirebaseLogo.svg";
 import FigmaLogo from "../../assets/FigmaLogo.svg";
-import CssLogo from "../../assets/CssLogo.svg";
-import SwiftLogo from "../../assets/Swift.svg";
-import NetLogo from "../../assets/Microsoft_.NET_logo.svg"
 
 export const About = () => {
   return (
@@ -36,58 +37,20 @@ export const About = () => {
             My Skills
           </h1>
           <div className="grid h-full min-h-full ">
-            <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 pb-32  gap-1 py-4 h-full">
-              <SkillsLogo
-                title="React"
-                logo={
-                  <ReactLog className="w-20 h-20 drop-shadow-lg flex justify-center items-center" />
-                }
-              />
-              <SkillsLogo
-                title="Angular"
-                logo={<AngularLogo className="w-20 h-20 drop-shadow-md" />}
-              />
-              <SkillsLogo
-                title="Swift"
-                logo={<SwiftLogo className="w-20 h-20 drop-shadow-md" />}
-              />
-              <SkillsLogo
-                title="Typescript"
-                logo={<TypescriptLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title="Javascript"
-                logo={<JavascriptLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title=".NET"
-                logo={<NetLogo className="w-20 h-20 drop-shadow-lg rounded-sm" />}
-              />
-              <SkillsLogo
-                title="Html"
-                logo={<HtmlLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-
-              <SkillsLogo
-                title="Css"
-                logo={<CssLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title="Firebase"
-                logo={<FirebaseLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title="Git"
-                logo={<GitLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title="Zustand"
-                logo={<ZustandLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
-              <SkillsLogo
-                title="Figma"
-                logo={<FigmaLogo className="w-20 h-20 drop-shadow-lg" />}
-              />
+            <div className="grid sm:grid-cols-4 grid-cols-3 sm:gap-5 pb-32 gap-1 py-4 h-full">
+              <SkillsLogo title="React" logo={<ReactLog className="w-20 h-20 drop-shadow-lg" />} />
+              <SkillsLogo title="Angular" logo={<AngularLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="NestJS" logo={<NestJsLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="TypeScript" logo={<TypescriptLogo className="w-20 h-20 drop-shadow-lg" />} />
+              <SkillsLogo title=".NET" logo={<NetLogo className="w-20 h-20 drop-shadow-lg rounded-sm" />} />
+              <SkillsLogo title="Node.js" logo={<NodejsLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="PostgreSQL" logo={<PostgresqlLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="MySQL" logo={<MysqlLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="MongoDB" logo={<MongodbLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="Redis" logo={<RedisLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="Docker" logo={<DockerLogo className="w-20 h-20 drop-shadow-md" />} />
+              <SkillsLogo title="Git" logo={<GitLogo className="w-20 h-20 drop-shadow-lg" />} />
+              {/* <SkillsLogo title="Figma" logo={<FigmaLogo className="w-20 h-20 drop-shadow-lg" />} /> */}
             </div>
           </div>
         </div>

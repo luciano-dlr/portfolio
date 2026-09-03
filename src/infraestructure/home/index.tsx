@@ -23,8 +23,8 @@ export const Home = () => {
       </div>
       <div className="w-[350px] md:w-[600px] text-center fade-in delay-400">
         <p className="py-2 font-normal text-lg dark:text-secondary-100">
-          Passionate Developer with extensive experience in crafting and
-          optimizing applications across web and mobile platforms.
+          Specialized in backend architecture, scalable APIs and database systems.
+          Frontend proficient with expertise in state management and high-performance solutions.
         </p>
       </div>
       <div className="p-3 pt-20 text-xl font-semibold fade-in delay-800">

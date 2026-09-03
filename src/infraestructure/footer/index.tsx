@@ -11,9 +11,9 @@ export const Footer = () => {
           </h2>
           <div className="w-[350px] md:w-[600px] dark:text-secondary-100">
             <p className="py-2 font-normal text-base">
-              Passionate Frontend Developer specializing in React and React
-              Native, dedicated to creating and optimizing web / mobile
-              applications for exceptional user experiences.
+              Full Stack Developer specializing in backend architecture,
+              scalable APIs and database systems. Frontend proficient with
+              expertise in state management and high-performance solutions.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
       </div>
       <p className="text-center pt-5 font-normal text-xs">
-        © Copyright 2024 - Made by Luciano de la Rubia
+        © Copyright 2026 -  Luciano de la Rubia
       </p>
     </div>
   );
