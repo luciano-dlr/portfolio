@@ -10,8 +10,8 @@ const WorkHistory: WorkHistoryItems[] = [
   {
     role: "Software Developer",
     company: "Mindfactory",
-    duration: "2025 - Presente",
-    durationEn: "2025 - Present",
+    duration: "2026 - Presente",
+    durationEn: "2026 - Present",
     descriptionKey: "about.mindfactory",
   },
   {
