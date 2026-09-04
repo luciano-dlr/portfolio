@@ -16,7 +16,7 @@ const WorkHistory: WorkHistoryItems[] = [
   },
   {
     role: "Software Developer",
-    company: "Farmacias Sánchez Antonioli",
+    company: "Farmacias Sanchez Antoniolli",
     duration: "2025 - 2026",
     durationEn: "2025 - 2026",
     descriptionKey: "about.farmacias",

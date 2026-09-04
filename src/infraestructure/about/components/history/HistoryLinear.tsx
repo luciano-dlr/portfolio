@@ -19,7 +19,7 @@ export const History = () => {
               className="sm:mb-10 sm:ml-4 mb-4 mx-4 flex items-start "
             >
               <div
-                className={`absolute w-full sm:w-[20px] sm:h-[20px] bg-primary-100 dark:bg-indigo-800 rounded-full sm:-left-2.5 sm:border border-primary-100 ${exp.company === "Explender SRL" ? "typing-circle" : ""
+                className={`absolute w-full sm:w-[20px] sm:h-[20px] bg-primary-100 dark:bg-indigo-800 rounded-full sm:-left-2.5 sm:border border-primary-100 ${exp.company === "Mindfactory" ? "typing-circle" : ""
                   }`}
               ></div>
 

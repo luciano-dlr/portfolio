@@ -11,12 +11,12 @@
   "home": {
     "greeting": "Hey, soy Luciano de la Rubia",
     "role": "Full Stack Developer",
-    "description": "Especializado en arquitectura backend, APIs escalables y sistemas de bases de datos. Proficiente en frontend con experiencia en gestión de estado y soluciones de alto rendimiento.",
+    "description": "Desarrollador apasionado con una sólida trayectoria en el desarrollo y la optimización de aplicaciones tanto para entornos web como móviles.",
     "projects": "Proyectos"
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Desarrollador Full Stack especializado en arquitectura backend, APIs escalables (.NET/NestJS) y sistemas de bases de datos. Proficiente en frontend (React/Angular) con experiencia en gestión de estado y soluciones de alto rendimiento.",
+    "description": "Full-Stack con amplia experiencia en arquitectura de backend, diseño de APIs escalables y administración de bases de datos. Sólidos conocimientos en frontend, especializado en gestión de estado y soluciones de alto rendimiento.",
     "history": "Historial",
     "skills": "Mis Skills",
     "present": "Presente",

@@ -11,12 +11,12 @@
   "home": {
     "greeting": "Hey, I'm Luciano de la Rubia",
     "role": "Full Stack Developer",
-    "description": "Specialized in backend architecture, scalable APIs and database systems. Frontend proficient with expertise in state management and high-performance solutions.",
+    "description": "Passionate Developer with extensive experience in crafting and optimizing applications across web and mobile platforms.",
     "projects": "Projects"
   },
   "about": {
     "title": "About Me",
-    "description": "Full Stack Developer specializing in backend architecture, scalable APIs (.NET/NestJS), and database systems. Frontend proficient (React/Angular) with expertise in state management and high-performance solutions.",
+    "description": "Full-Stack Developer with experience in backend architecture, scalable API design, and database management. Frontend skills, specialized in state management and high-performance solutions.",
     "history": "History",
     "skills": "My Skills",
     "present": "Present",

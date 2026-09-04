@@ -33,9 +33,9 @@ export const Navbar = () => {
             e.preventDefault();
             handleNavClick("#home");
           }}
-          className="text-xl font-bold w-20  tracking-tight text-gray-900 dark:text-white hover:opacity-80 transition-opacity"
+          className="text-xl font-bold w-200  tracking-tight text-gray-900 dark:text-white hover:opacity-80 transition-opacity"
         >
-          LDLR
+          DLR
         </a>
 
         {/* Center links */}
