@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggleMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleDarkMode": "Toggle dark mode"
+  },
+  "home": {
+    "greeting": "Hey, I'm Luciano de la Rubia",
+    "role": "Full Stack Developer",
+    "description": "Passionate Developer with extensive experience in crafting and optimizing applications across web and mobile platforms.",
+    "projects": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Full-Stack Developer with experience in backend architecture, scalable API design, and database management. Frontend skills, specialized in state management and high-performance solutions.",
+    "history": "History",
+    "skills": "My Skills",
+    "present": "Present",
+    "mindfactory": "Microservices with NestJS for the Córdoba Tax team, Argentina",
+    "farmacias": "Payment register audit system with NestJS, PostgreSQL and React. Audit automation with Cron-Jobs, MySQL and Redis.",
+    "explender": "RESTful APIs with ASP.NET Core. JWT authentication and role-based authorization. Frontend with Angular and React, PWA migration to React Native Expo",
+    "criteria": "React feature development. Dynamic forms, login systems, data filtering and layout design."
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "viewDemo": "View Demo"
+  },
+  "projectsList": {
+    "privateNotes": "A web app that uses your browser's storage to create private notes that only you can see on your computer or mobile device. It's local storage, so your notes can't be shared with others.",
+    "productCard": "It is a library in npm that solves the problem of creating an item where you need to manage a counter and the maximum value.",
+    "moviesApp": "An application that queries the most popular movies of the moment from the TMDB API. The app's style is based on the predominant color of each movie's promotional image, and it allows you to view detailed information about the movie, such as its cast.",
+    "pokedex": "A cross-platform mobile app that replicates the functionality of the iconic Pokedex from the Pokémon series. Utilizing the PokeAPI, this app allows users to search for their favorite Pokémon and view detailed information presented in visually appealing cards tailored to each Pokémon's color scheme.",
+    "calculator": "Built with React Native and TypeScript, this versatile calculator app delivers a familiar and user-friendly experience across both iOS and Android devices. Featuring an intuitive UI inspired by the clean aesthetics of iOS design.",
+    "rollDice": "This Swift-based iOS application simulates the classic experience of rolling dice. Equipped with two virtual dice, the app generates random values for each roll.",
+    "xylophone": "A Swift-based iOS application that simulates a xylophone. Each key produces a distinct sound when tapped, providing a fun and educational musical experience."
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "message": "Your message",
+    "messagePlaceholder": "Leave a message...",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "successMessage": "Form submitted successfully!",
+    "errorMessage": "Failed to send the message, please try again."
+  },
+  "footer": {
+    "description": "Full Stack Developer specializing in backend architecture, scalable APIs and database systems. Frontend proficient with expertise in state management and high-performance solutions.",
+    "copyright": "© Copyright 2026 - Luciano de la Rubia",
+    "social": "Social"
+  }
+}
